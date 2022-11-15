@@ -16,10 +16,11 @@ class EmpleadoForm(forms.ModelForm):
         model = Empleado
         fields = ('__all__')
         widgets= {
-            'departamento': forms.Select(attrs={'class':'form-control'})
-
+            'identificacion': forms.TextInput(attrs={'class':'form-control'}),
+            'nombres': forms.TextInput(attrs={'class':'form-control'}),
+            'apellidos': forms.TextInput(attrs={'class':'form-control'}),
+            'cargo': forms.Select(attrs={'class':'form-control'}),
+            'departamento': forms.Select(attrs={'class':'form-control'}),
+            'imagen': forms.FileInput(attrs={'class':'form-control'}),
         }
-
-     
-
 
