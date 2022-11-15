@@ -10,7 +10,7 @@ class Cargo(models.Model):
 
 
     def __str__(self):
-        fila = self.nombre + " - " + self.actividad
+        fila = self.nombre
         return fila
 
 
@@ -21,7 +21,7 @@ class Departamento(models.Model):
     actividad = models.CharField(max_length=500,verbose_name='Actividad')
 
     def __str__(self):
-        fila = self.nombre + " - " + self.actividad
+        fila = self.nombre
         return fila
    
 class Meta:
